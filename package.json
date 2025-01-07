@@ -1,0 +1,43 @@
+{
+  "name": "@restrella/slack-message-blocks",
+  "version": "1.0.0",
+  "description": "A package designed to simplify the process of creating and sending rich, interactive messages to Slack. This package provides a fluent interface for building various Slack message elements, including buttons, select menus, date pickers, and more.",
+  "main": "./dist/index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "src:build": "tsc -p ./tsconfig.json",
+    "src:lint": "eslint 'src/**/*.ts' --fix",
+    "build": "npm run src:build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/balance3840/slack-message-blocks-js.git"
+  },
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "keywords": [
+    "slack",
+    "slack-message",
+    "messages",
+    "slack-blocks",
+    "message-builder"
+  ],
+  "author": "Ramiro Estrella",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/balance3840/slack-message-blocks-js/issues"
+  },
+  "homepage": "https://github.com/balance3840/slack-message-blocks-js#readme",
+  "devDependencies": {
+    "@types/node": "^22.10.5",
+    "eslint": "^8.6.0",
+    "typescript": "^5.7.2"
+  },
+  "dependencies": {
+    "node-fetch": "^3.3.2"
+  }
+}
